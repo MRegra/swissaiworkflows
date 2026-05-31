@@ -1,8 +1,9 @@
-# Weekend Automation Sprint — Landing Page
+# Swiss AI Workflows — Landing Page
 
-Static one-page landing page for GitHub Pages.
+Static one-page landing page for [Swiss AI Workflows](https://mregra.github.io/swissaiworkflows).
 
-No build step. No dependencies. Open `index.html` in a browser to preview locally.
+Built with plain HTML5 + CSS. No build step, no dependencies, no frameworks.
+Open `index.html` in a browser to preview locally.
 
 ---
 
@@ -18,14 +19,14 @@ No build step. No dependencies. Open `index.html` in a browser to preview locall
 
 ## Deploy to GitHub Pages
 
-### Option A — Free subdomain (`yourusername.github.io/repo-name`)
+### Option A — Free subdomain (`mregra.github.io/swissaiworkflows`)
 
 1. Push this repository to GitHub.
 2. Go to **Settings → Pages**.
 3. Under **Source**, select **Deploy from a branch**.
 4. Select the `main` branch and `/ (root)` folder.
 5. Click **Save**.
-6. Your site goes live at `https://yourusername.github.io/your-repo-name/` within a minute or two.
+6. Your site goes live at `https://mregra.github.io/swissaiworkflows` within a minute or two.
 
 ### Option B — Custom domain (`yourdomain.com`)
 
@@ -44,7 +45,7 @@ No build step. No dependencies. Open `index.html` in a browser to preview locall
    | A     | @    | 185.199.109.153            |
    | A     | @    | 185.199.110.153            |
    | A     | @    | 185.199.111.153            |
-   | CNAME | www  | yourusername.github.io.   |
+   | CNAME | www  | `mregra.github.io.`       |
 
 4. In **Settings → Pages**, enter your custom domain and tick **Enforce HTTPS**.
 5. DNS changes can take up to 24 hours to propagate.
@@ -97,15 +98,17 @@ Place a `favicon.png` file in the repository root, then uncomment this line in `
 
 All design tokens are CSS custom properties at the top of `styles.css` inside the `:root {}` block. Key values:
 
-| Variable           | Default      | What it controls            |
-|--------------------|--------------|-----------------------------|
-| `--color-primary`  | `#1C2B4A`    | Headings, brand navy        |
-| `--color-accent`   | `#2563EB`    | Buttons, links, highlights  |
-| `--color-bg`       | `#F8F8F6`    | Page background             |
-| `--color-bg-alt`   | `#FFFFFF`    | Alternating section background |
-| `--font`           | System stack | Body and heading font       |
+| Variable             | Default        | What it controls                   |
+|----------------------|----------------|---------------------------------|
+| `--color-bg`         | `#ffffff`      | Page background                    |
+| `--color-bg-alt`     | `#f5f5f7`      | Alternating section background     |
+| `--color-bg-dark`    | `#1d1d1f`      | Dark sections (offer, CTA, demo)   |
+| `--color-text`       | `#1d1d1f`      | Body text                          |
+| `--color-text-muted` | `#6e6e73`      | Secondary / muted text             |
+| `--color-accent`     | `#0071e3`      | Buttons, links, highlights         |
+| `--font`             | Inter + system | Body and heading font              |
 
-To use a custom Google Font, add a `<link>` tag in `<head>` and update `--font` in `styles.css`.
+All tokens live in the `:root {}` block at the top of `styles.css`.
 
 ---
 
