@@ -1060,7 +1060,81 @@ p + p {
 
 
 /* ============================================================
-   20. Video demo section
+   20. Section visuals (images)
+   ============================================================ */
+
+/* Hero visual — full-width image below the CTAs */
+.hero-visual {
+  margin-top: var(--sp-16);
+  text-align: center;
+  /* Pull slightly wider than the narrow container */
+  padding-inline: 0;
+}
+
+.hero-visual img {
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  border-radius: var(--radius-xl);
+  /* Floating glass effect — match the image's own aesthetic */
+  filter: drop-shadow(0 48px 96px rgba(0, 113, 227, .14))
+          drop-shadow(0 16px 32px rgba(0, 0, 0, .08));
+  transition: filter .4s ease;
+}
+
+.hero-visual img:hover {
+  filter: drop-shadow(0 56px 112px rgba(0, 113, 227, .20))
+          drop-shadow(0 20px 40px rgba(0, 0, 0, .10));
+}
+
+/* Generic section visual — reusable for solution + case study */
+.section-visual {
+  margin-top: var(--sp-14);
+  text-align: center;
+}
+
+.section-visual img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: var(--radius-xl);
+  filter: drop-shadow(0 40px 80px rgba(0, 113, 227, .12))
+          drop-shadow(0 12px 28px rgba(0, 0, 0, .07));
+}
+
+/* Case study visual — slightly more prominent */
+.section-visual--casestudy {
+  margin-bottom: var(--sp-10);
+  margin-top: var(--sp-6);
+}
+
+.section-visual--casestudy img {
+  max-width: 880px;
+  filter: drop-shadow(0 40px 80px rgba(0, 113, 227, .15))
+          drop-shadow(0 10px 24px rgba(0, 0, 0, .08));
+}
+
+/* Responsive: constrain on smaller screens */
+@media (max-width: 860px) {
+  .hero-visual img,
+  .section-visual img {
+    border-radius: var(--radius-lg);
+  }
+}
+
+@media (max-width: 560px) {
+  .hero-visual {
+    margin-top: var(--sp-10);
+  }
+  .hero-visual img,
+  .section-visual img {
+    border-radius: var(--radius-md);
+  }
+}
+
+
+/* ============================================================
+   21. Video demo section
    ============================================================ */
 .demo-section {
   background-color: var(--color-bg-dark);
@@ -1156,7 +1230,7 @@ p + p {
 
 
 /* ============================================================
-   21. Premium detail polish
+   22. Premium detail polish
    ============================================================ */
 
 /* Thin decorative rule above standalone section eyebrows */

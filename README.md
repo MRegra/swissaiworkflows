@@ -7,13 +7,25 @@ Open `index.html` in a browser to preview locally.
 
 ---
 
-## Files
+## Project structure
 
-| File         | Purpose                    |
-|--------------|----------------------------|
-| `index.html` | Main landing page          |
-| `styles.css` | All styles                 |
-| `README.md`  | This file                  |
+```
+ai-biz-onepager/
+├── index.html              # One-page landing page
+├── assets/
+│   ├── css/
+│   │   └── styles.css      # All styles — Apple-inspired design system
+│   └── images/
+│       ├── hero-visual.png         # Hero section visual
+│       ├── solution-visual.png     # Solution section visual
+│       └── casestudy-visual.png    # Case study section visual
+├── CNAME                   # Custom domain (optional)
+├── .gitignore
+└── README.md
+```
+
+> Drop `demo.mp4` (and optionally `demo-poster.jpg`) in the root folder to
+> activate the video demo section.
 
 ---
 
@@ -108,7 +120,7 @@ All design tokens are CSS custom properties at the top of `styles.css` inside th
 | `--color-accent`     | `#0071e3`      | Buttons, links, highlights         |
 | `--font`             | Inter + system | Body and heading font              |
 
-All tokens live in the `:root {}` block at the top of `styles.css`.
+All tokens live in the `:root {}` block at the top of `assets/css/styles.css`.
 
 ---
 
