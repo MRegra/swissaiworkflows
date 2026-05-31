@@ -696,18 +696,21 @@ p + p {
   margin-bottom: var(--sp-4);
 }
 
-/* Side-by-side layout: image left, cards right — equal height columns */
+/* Side-by-side layout: image left (wider), cards right */
 .casestudy-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--sp-10);
+  grid-template-columns: 55% 1fr;
+  gap: var(--sp-8);
   align-items: stretch;
   margin-top: var(--sp-8);
 }
 
-/* Image column stretches to match the cards column height */
+/* Image column fills the full row height */
 .casestudy-visual-col {
-  min-height: 400px;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 24px 48px rgba(0,113,227,.12),
+              0 8px 16px rgba(0,0,0,.06);
 }
 
 .casestudy-visual-col img {
@@ -716,8 +719,6 @@ p + p {
   height: 100%;
   object-fit: cover;
   border-radius: var(--radius-xl);
-  box-shadow: 0 24px 48px rgba(0,113,227,.12),
-              0 8px 16px rgba(0,0,0,.06);
 }
 
 .casestudy-cards-col {
