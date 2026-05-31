@@ -1063,20 +1063,20 @@ p + p {
    20. Section visuals (images)
    ============================================================ */
 
-/* Hero visual — full-width image below the CTAs */
+/* Hero visual — full-width image below the CTAs, centered */
 .hero-visual {
   margin-top: var(--sp-16);
-  text-align: center;
-  /* Pull slightly wider than the narrow container */
-  padding-inline: 0;
+  padding-inline: var(--container-px, 1.5rem);
 }
 
 .hero-visual img {
+  display: block;
+  margin-inline: auto;
   width: 100%;
   max-width: 960px;
   height: auto;
   border-radius: var(--radius-xl);
-  /* Floating glass effect — match the image's own aesthetic */
+  /* Floating glass effect */
   filter: drop-shadow(0 48px 96px rgba(0, 113, 227, .14))
           drop-shadow(0 16px 32px rgba(0, 0, 0, .08));
   transition: filter .4s ease;
@@ -1087,13 +1087,14 @@ p + p {
           drop-shadow(0 20px 40px rgba(0, 0, 0, .10));
 }
 
-/* Generic section visual — reusable for solution + case study */
+/* Generic section visual — centered block */
 .section-visual {
   margin-top: var(--sp-14);
-  text-align: center;
 }
 
 .section-visual img {
+  display: block;
+  margin-inline: auto;
   width: 100%;
   max-width: 1000px;
   height: auto;
@@ -1102,7 +1103,7 @@ p + p {
           drop-shadow(0 12px 28px rgba(0, 0, 0, .07));
 }
 
-/* Case study visual — slightly more prominent */
+/* Case study visual */
 .section-visual--casestudy {
   margin-bottom: var(--sp-10);
   margin-top: var(--sp-6);
