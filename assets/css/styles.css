@@ -76,6 +76,7 @@
   /* Layout */
   --max-w:        1080px;
   --max-w-narrow: 680px;
+  --max-w-wide:   1400px;
   --section-py:   6rem;
 
   /* Borders & shadows */
@@ -192,6 +193,10 @@ p + p {
 
 .container--narrow {
   max-width: var(--max-w-narrow);
+}
+
+.container--wide {
+  max-width: var(--max-w-wide);
 }
 
 .section {
