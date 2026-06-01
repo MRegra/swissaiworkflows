@@ -1744,12 +1744,6 @@ a.inline-link:hover {
   margin-bottom: var(--sp-3);
 }
 
-.offer-price-typical {
-  font-size: var(--text-sm);
-  color: rgba(245, 245, 247, 0.72);
-  margin-bottom: var(--sp-6);
-}
-
 .offer-price-tag {
   font-size: var(--text-sm);
   font-weight: var(--weight-medium);
@@ -1785,13 +1779,6 @@ a.inline-link:hover {
 
 .offer-pricing-breakdown strong {
   color: rgba(245, 245, 247, 0.9);
-}
-
-.offer-clarify {
-  font-size: var(--text-sm);
-  color: rgba(245, 245, 247, 0.78);
-  margin-bottom: var(--sp-4);
-  max-width: 52ch;
 }
 
 .offer-card--main .btn-primary {
