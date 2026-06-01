@@ -300,10 +300,25 @@ p + p {
 
 /* Premium site-brand: letter-spaced wordmark */
 .site-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
   font-weight: var(--weight-semibold);
   font-size: var(--text-base);
   color: var(--color-text);
   letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.site-brand:hover {
+  color: var(--color-text);
+}
+
+.site-brand-icon {
+  display: block;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
 }
 
 .site-brand em {
