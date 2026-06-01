@@ -1376,6 +1376,7 @@ p + p {
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   margin-block: var(--sp-5);
   line-height: var(--leading-relaxed);
+  text-align: center;
 }
 
 /* --- How it works — intro text --- */
