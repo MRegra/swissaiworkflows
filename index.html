@@ -33,6 +33,22 @@
 
     gtag('config', 'AW-18204046616');
   </script>
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-18204046616/GyTMCPe4rbccEJjqruhD',
+          'value': 1.0,
+          'currency': 'CHF',
+          'event_callback': callback
+      });
+      return false;
+    }
+  </script>
 
   <!-- Inter font — closest open equivalent to SF Pro -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -768,6 +784,17 @@
       });
       video.addEventListener('error', function () {
         placeholder.style.display = 'flex';
+      });
+    }());
+
+    // Fire Google Ads conversion event on lead-form CTA clicks.
+    (function () {
+      var leadLinks = document.querySelectorAll('a[href="https://tally.so/r/q4vzNk"]');
+      if (!leadLinks.length || typeof gtag_report_conversion !== 'function') return;
+      leadLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          gtag_report_conversion();
+        });
       });
     }());
   </script>
