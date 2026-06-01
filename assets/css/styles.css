@@ -523,9 +523,11 @@ p + p {
    ============================================================ */
 .offer-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: var(--sp-6);
-  align-items: stretch;
+  align-items: start;
+  max-width: 760px;
+  margin-inline: auto;
   margin-top: var(--sp-12);
 }
 
