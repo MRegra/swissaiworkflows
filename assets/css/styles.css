@@ -411,6 +411,10 @@ p + p {
   align-items: center;
 }
 
+.howitworks-section .cta-group {
+  margin-top: var(--sp-8);
+}
+
 
 /* ============================================================
    9. Pain
