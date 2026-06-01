@@ -617,16 +617,15 @@ p + p {
   font-weight: var(--weight-normal);
 }
 
-/* Good fit / not a fit */
+/* Good fit card */
 .offer-fit-grid {
   display: flex;
   flex-direction: column;
-  gap: var(--sp-4);
 }
 
-.offer-card--fit,
-.offer-card--nofit {
+.offer-card--fit {
   padding: var(--sp-8);
+  flex: 1;
 }
 
 .fit-label {
@@ -1542,7 +1541,24 @@ a.inline-link:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;
   display: block;
+}
+
+/* Soft bottom fade to blend the crop cleanly */
+.demo-card-img::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(255,255,255,.55) 100%);
+  pointer-events: none;
+}
+
+.demo-card-img {
+  position: relative;
 }
 
 .demo-card-img--placeholder {
