@@ -526,7 +526,7 @@ p + p {
   grid-template-columns: 1fr;
   gap: var(--sp-6);
   align-items: start;
-  max-width: 760px;
+  max-width: 920px;
   margin-inline: auto;
   margin-top: var(--sp-12);
 }
@@ -1744,6 +1744,12 @@ a.inline-link:hover {
   margin-bottom: var(--sp-3);
 }
 
+.offer-price-typical {
+  font-size: var(--text-sm);
+  color: rgba(245, 245, 247, 0.72);
+  margin-bottom: var(--sp-6);
+}
+
 .offer-price-tag {
   font-size: var(--text-sm);
   font-weight: var(--weight-medium);
@@ -1781,6 +1787,30 @@ a.inline-link:hover {
   color: rgba(245, 245, 247, 0.9);
 }
 
+.offer-clarify {
+  font-size: var(--text-sm);
+  color: rgba(245, 245, 247, 0.78);
+  margin-bottom: var(--sp-4);
+  max-width: 52ch;
+}
+
+.offer-card--main .btn-primary {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (min-width: 861px) {
+  .check-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--sp-8);
+  }
+
+  .check-list li {
+    padding: var(--sp-3) 0;
+  }
+}
+
 /* ============================================================
    29. Secondary website offer section
    ============================================================ */
@@ -1812,10 +1842,10 @@ a.inline-link:hover {
 
 .website-pricing-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--sp-4);
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  gap: var(--sp-5);
   align-items: stretch;
-  margin-bottom: var(--sp-6);
+  margin-bottom: var(--sp-8);
 }
 
 .website-plan {
@@ -1933,11 +1963,17 @@ a.inline-link:hover {
   }
 
   .website-pricing-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: var(--sp-3);
   }
 
   .website-plan {
     padding: var(--sp-5);
+  }
+}
+
+@media (max-width: 640px) {
+  .website-pricing-grid {
+    grid-template-columns: 1fr;
   }
 }
