@@ -826,19 +826,19 @@ p + p {
   padding: 0;
 }
 
-.steps-list li {
+.step-item {
+  list-style: none;
+}
+
+.step-card {
   display: flex;
-  align-items: flex-start;
-  gap: 0;
+  flex-direction: column;
+  gap: var(--sp-2);
   padding: var(--sp-5) var(--sp-6);
   border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-lg);
   background: var(--color-bg);
   transition: background-color var(--ease);
-}
-
-.steps-list li:first-child {
-  border-top: 1px solid var(--color-border-subtle);
 }
 
 .step-number {
@@ -1389,16 +1389,6 @@ p + p {
 }
 
 /* --- How it works — rich step format --- */
-.steps-list li {
-  align-items: flex-start;
-}
-
-.step-content {
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-2);
-}
-
 .step-head {
   display: flex;
   align-items: center;
