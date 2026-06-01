@@ -1783,7 +1783,7 @@ a.inline-link:hover {
 }
 
 .website-headline {
-  font-size: clamp(var(--text-2xl), 3vw, var(--text-3xl));
+  font-size: clamp(var(--text-2xl), 2.6vw, var(--text-3xl));
   margin-bottom: var(--sp-5);
 }
 
@@ -1791,73 +1791,133 @@ a.inline-link:hover {
   color: var(--color-text-muted);
   max-width: var(--max-w-narrow);
   margin-inline: auto;
-  margin-bottom: var(--sp-10);
+  margin-bottom: var(--sp-5);
   line-height: var(--leading-relaxed);
 }
 
-.website-offer-card {
-  background: var(--color-bg);
-  border-radius: var(--radius-xl);
-  padding: var(--sp-10);
-  box-shadow: var(--shadow-sm);
-  max-width: 620px;
+.website-secondary-note {
+  max-width: 64ch;
   margin-inline: auto;
-  text-align: left;
-  border: 1px solid var(--color-border-subtle);
-}
-
-.website-offer-price {
-  font-size: var(--text-2xl);
-  font-weight: var(--weight-semibold);
-  margin-bottom: var(--sp-3);
-  color: var(--color-text);
-}
-
-.website-price-tag {
-  font-size: var(--text-sm);
-  font-weight: var(--weight-medium);
-  color: var(--color-text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-left: var(--sp-2);
-}
-
-.website-price-note {
+  margin-bottom: var(--sp-8);
   font-size: var(--text-sm);
   color: var(--color-text-muted);
-  max-width: 56ch;
   line-height: var(--leading-relaxed);
+}
+
+.website-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--sp-4);
+  align-items: stretch;
   margin-bottom: var(--sp-6);
 }
 
-.website-fit-label {
-  font-size: var(--text-xs);
-  font-weight: var(--weight-semibold);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--color-text-muted);
-  margin-bottom: var(--sp-3);
-}
-
-.website-fit-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--sp-2);
-  margin-bottom: var(--sp-8);
-}
-
-.website-fit-tags span {
-  background: var(--color-bg-alt);
+.website-plan {
+  background: var(--color-bg);
   border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  box-shadow: var(--shadow-xs);
+}
+
+.website-plan--featured {
+  border-color: #cfd8e3;
+  box-shadow: var(--shadow-sm);
+}
+
+.website-plan-badge {
+  align-self: flex-start;
+  font-size: 0.6875rem;
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0f4f8e;
+  background: #eaf3fd;
+  border: 1px solid #d3e6fa;
   border-radius: 999px;
-  padding: var(--sp-1) var(--sp-3);
+  padding: 0.2rem 0.5rem;
+}
+
+.website-plan-title {
+  font-size: var(--text-lg);
+  margin: 0;
+}
+
+.website-plan-price {
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-extrabold);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--color-text);
+}
+
+.website-plan-subtitle {
   font-size: var(--text-sm);
   color: var(--color-text-muted);
+  margin-bottom: var(--sp-1);
 }
 
-.website-offer-card .btn {
+.website-plan-label {
+  font-size: 0.6875rem;
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.website-plan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: var(--sp-2);
+}
+
+.website-plan-list li {
+  position: relative;
+  padding: 0.45rem 0 0.45rem 1rem;
+  font-size: var(--text-sm);
+  color: #424245;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.website-plan-list li:last-child {
+  border-bottom: none;
+}
+
+.website-plan-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #9bb8d5;
+  transform: translateY(-50%);
+}
+
+.website-plan-bestfor {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+  margin-top: auto;
+  margin-bottom: var(--sp-4);
+}
+
+.website-plan .btn {
   width: 100%;
   justify-content: center;
+}
+
+.website-pricing-note {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  max-width: 72ch;
+  margin-inline: auto;
+  line-height: var(--leading-relaxed);
 }
 
 @media (max-width: 860px) {
@@ -1866,7 +1926,12 @@ a.inline-link:hover {
     row-gap: var(--sp-1);
   }
 
-  .website-offer-card {
-    padding: var(--sp-8);
+  .website-pricing-grid {
+    grid-template-columns: 1fr;
+    gap: var(--sp-3);
+  }
+
+  .website-plan {
+    padding: var(--sp-5);
   }
 }
