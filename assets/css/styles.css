@@ -1367,6 +1367,31 @@ p + p {
   color: #fff;
 }
 
+/* --- Offer card (dark) — fix button and risk-note on dark bg --- */
+
+/* White CTA button inside the dark offer card */
+.offer-card--main .btn-primary {
+  background-color: #fff;
+  color: var(--color-bg-dark);
+  border-color: #fff;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.offer-card--main .btn-primary:hover {
+  background-color: var(--color-bg-alt);
+  border-color: var(--color-bg-alt);
+  color: var(--color-bg-dark);
+}
+
+/* Risk note on dark card — translucent instead of white box */
+.offer-card--main .risk-note {
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(245, 245, 247, 0.55);
+  border-left-color: rgba(0, 113, 227, 0.55);
+}
+
 /* Hero — stronger headline gradient on supported browsers */
 @supports (-webkit-background-clip: text) {
   .hero-gradient-text {
