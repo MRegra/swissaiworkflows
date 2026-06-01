@@ -460,7 +460,7 @@ p + p {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: var(--sp-16);
-  align-items: start;
+  align-items: center;
 }
 
 .solution-text h2 {
@@ -1035,6 +1035,10 @@ p + p {
   .offer-grid {
     grid-template-columns: 1fr;
     gap: var(--sp-6);
+  }
+
+  .solution-layout {
+    align-items: start;
   }
 
   .casestudy-layout {
