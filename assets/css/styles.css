@@ -1164,6 +1164,36 @@ p + p {
   margin-bottom: var(--sp-12);
 }
 
+/* Primary CTA button on dark demo background — needs white treatment */
+.demo-section .btn-primary {
+  background-color: #fff;
+  color: var(--color-bg-dark);
+  border-color: #fff;
+}
+
+.demo-section .btn-primary:hover {
+  background-color: var(--color-bg-alt);
+  border-color: var(--color-bg-alt);
+  color: var(--color-bg-dark);
+}
+
+/* Secondary "Or book…" link on dark background */
+.demo-section .demo-cta-secondary {
+  color: rgba(245, 245, 247, 0.55);
+}
+
+.demo-section .demo-cta-secondary a {
+  color: rgba(245, 245, 247, 0.7);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(245,245,247,0.3);
+}
+
+.demo-section .demo-cta-secondary a:hover {
+  color: #fff;
+  text-decoration-color: rgba(245,245,247,0.7);
+}
+
 /* Video container — premium rounded frame with layered shadow */
 .demo-shell {
   position: relative;
