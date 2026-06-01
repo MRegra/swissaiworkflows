@@ -13,12 +13,12 @@
 
   <!-- Open Graph / social sharing -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Swiss AI Workflows | Excel, Google Sheets &amp; AI Automation Switzerland" />
-  <meta property="og:description" content="Weekend automation help for English-speaking Swiss SMEs. Automate Excel, Google Sheets, CSV reports, admin tasks, and AI workflows with small fixed-price projects." />
-  <meta property="og:url" content="https://swissaiworkflows.ch" />
+  <meta property="og:title" content="Swiss AI Workflows | Weekend Automation Sprint" />
+  <meta property="og:description" content="Automate repetitive spreadsheet, reporting, admin, and AI workflows. Small fixed-price projects for English-speaking Swiss SMEs." />
+  <meta property="og:url" content="https://swissaiworkflows.ch/" />
   <meta property="og:image" content="https://swissaiworkflows.ch/assets/images/hero-visual.png" />
 
-  <link rel="canonical" href="https://swissaiworkflows.ch" />
+  <link rel="canonical" href="https://swissaiworkflows.ch/" />
 
   <!-- REPLACE: add your favicon -->
   <!-- <link rel="icon" type="image/png" href="favicon.png" /> -->
@@ -80,61 +80,102 @@
              rel="noopener noreferrer">
             Book a free 15-minute automation check
           </a>
-          <!-- TODO: Replace with your Tally form: https://tally.so/r/YOUR-FORM-ID -->
-          <a href="https://calendly.com/marcelo-regra-silva/30min"
+          <!-- TALLY-FORM: replace href with https://tally.so/r/YOUR-FORM-ID -->
+          <a href="https://tally.so/r/YOUR-FORM-ID"
              class="btn btn-secondary btn-lg"
              target="_blank"
              rel="noopener noreferrer">
             Send me your workflow problem
           </a>
         </div>
+        <p class="hero-trust">
+          Built by Marcelo, a Switzerland-based Product Owner / DevOps Engineer.
+          Small, practical automations — not a generic AI agency.
+        </p>
       </div>
     </section>
 
     <!-- ============================================================
-         2. VIDEO DEMO
+         2. DEMO — See it in action
          ============================================================ -->
     <section class="section demo-section" aria-labelledby="demo-headline">
       <div class="container container--narrow text-center">
         <p class="eyebrow">See it in action</p>
-        <h2 id="demo-headline">One workflow. One&nbsp;weekend.</h2>
+        <h2 id="demo-headline">A realistic SME workflow</h2>
         <p class="hero-sub">
-          Watch how a messy monthly CSV export becomes a clean, automated report.
+          Messy sales CSV &rarr; cleaned Excel report &rarr; dashboard &rarr; AI-ready business summary.
         </p>
       </div>
+
+      <!-- Optional: video walkthrough -->
+      <div class="container demo-video-wrap">
+        <video
+          class="demo-video"
+          src="assets/video.mp4"
+          playsinline
+          muted
+          autoplay
+          loop
+          aria-label="Demo: automated monthly sales report workflow"
+        ></video>
+      </div>
+
+      <!-- 3 demo cards -->
       <div class="container">
-        <!--
-          ============================================================
-          REPLACE: add your demo video
-          - Drop your recording as  demo.mp4  in this folder
-          - Add a poster image as   demo-poster.jpg  (shown before play)
-          - Recommended resolution: 1920×1080 or 1280×720, MP4 (H.264)
-          - Remove autoplay / muted / loop if you prefer manual play
-          ============================================================
-        -->
-        <div class="demo-shell" role="region" aria-label="Demo video">
-          <video
-            class="demo-video"
-            src="assets/video.mp4"
-            playsinline
-            muted
-            autoplay
-            loop
-            aria-label="Demo: automated monthly sales report workflow"
-          ></video>
-          <!-- Shown only when demo.mp4 is not yet present (onerror fallback) -->
-          <div class="demo-placeholder" id="demo-placeholder">
-            <div class="demo-placeholder-inner">
-              <span class="demo-play-icon" aria-hidden="true">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="16" cy="16" r="16" fill="rgba(255,255,255,.15)"/>
-                  <polygon points="13,10 24,16 13,22" fill="white"/>
-                </svg>
-              </span>
-              <p class="demo-placeholder-title">See a real workflow in action</p>
-              <p class="demo-placeholder-hint">Demo coming soon</p>
+        <div class="demo-cards">
+
+          <div class="demo-card">
+            <div class="demo-card-img" aria-label="Screenshot: messy CSV export">
+              <img
+                src="assets/images/casestudy-visual.png"
+                alt="A raw CSV export with inconsistent dates, duplicate rows, and unpaid invoice flags"
+                loading="lazy"
+              />
+            </div>
+            <div class="demo-card-body">
+              <span class="demo-card-step">Input</span>
+              <h3 class="demo-card-title">Messy export</h3>
+              <p class="demo-card-text">A typical CSV export with inconsistent dates, unpaid invoices, refunded orders, and manual cleanup work.</p>
             </div>
           </div>
+
+          <div class="demo-card">
+            <div class="demo-card-img demo-card-img--placeholder" aria-label="Screenshot: automated Excel report">
+              <span class="demo-card-placeholder-label">Screenshot: automated Excel report</span>
+            </div>
+            <div class="demo-card-body">
+              <span class="demo-card-step">Processing</span>
+              <h3 class="demo-card-title">Automated report</h3>
+              <p class="demo-card-text">The workflow cleans the data, calculates revenue and VAT, flags issues, and creates a structured Excel report.</p>
+            </div>
+          </div>
+
+          <div class="demo-card">
+            <div class="demo-card-img demo-card-img--placeholder" aria-label="Screenshot: dashboard and business summary">
+              <span class="demo-card-placeholder-label">Screenshot: dashboard / summary</span>
+            </div>
+            <div class="demo-card-body">
+              <span class="demo-card-step">Output</span>
+              <h3 class="demo-card-title">Business summary</h3>
+              <p class="demo-card-text">The output includes an AI-ready prompt for an executive summary, risks, and recommended next actions.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="demo-cta text-center">
+          <!-- TALLY-FORM: replace href with https://tally.so/r/YOUR-FORM-ID -->
+          <a href="https://tally.so/r/YOUR-FORM-ID"
+             class="btn btn-primary btn-lg"
+             target="_blank"
+             rel="noopener noreferrer">
+            Send me your workflow problem
+          </a>
+          <p class="demo-cta-secondary">
+            Or <a href="https://calendly.com/marcelo-regra-silva/30min"
+                  target="_blank"
+                  rel="noopener noreferrer">book a free 15-minute check</a>
+          </p>
         </div>
       </div>
     </section>
@@ -304,6 +345,30 @@
     </section>
 
     <!-- ============================================================
+         SAMPLE OUTPUT
+         ============================================================ -->
+    <section class="section sample-output-section" aria-labelledby="sample-headline">
+      <div class="container container--narrow">
+        <p class="eyebrow text-center">What you receive</p>
+        <h2 id="sample-headline" class="section-headline text-center">Sample output</h2>
+        <p class="sample-intro text-center">
+          A typical sprint can produce a simple, usable workflow like this.
+        </p>
+        <ul class="sample-list" role="list">
+          <li>Cleaned Excel or Google Sheets report</li>
+          <li>Data quality warnings (flagged dates, missing values, duplicates)</li>
+          <li>Revenue, invoice, or operational summary</li>
+          <li>Simple dashboard or charts</li>
+          <li>AI-ready business summary prompt</li>
+          <li>Short handover video</li>
+        </ul>
+        <p class="sample-note">
+          The goal is not a big software project. The goal is one repetitive task fixed clearly.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
          6. WHY NOT JUST USE AI
          ============================================================ -->
     <section class="section ai-section" aria-labelledby="ai-headline">
@@ -379,8 +444,8 @@
         </div>
         <div class="casestudy-cta text-center">
           <p class="casestudy-cta-label">Have a similar workflow?</p>
-          <!-- TODO: Replace with your Tally form: https://tally.so/r/YOUR-FORM-ID -->
-          <a href="https://calendly.com/marcelo-regra-silva/30min"
+          <!-- TALLY-FORM: replace href with https://tally.so/r/YOUR-FORM-ID -->
+          <a href="https://tally.so/r/YOUR-FORM-ID"
              class="btn btn-secondary btn-lg"
              target="_blank"
              rel="noopener noreferrer">
@@ -400,7 +465,7 @@
           Start with a short intake form. You do not need to be technical — just describe
           the task you currently do manually.
         </p>
-        <ol class="steps-list" role="list">
+        <ul class="steps-list" role="list">
           <li>
             <span class="step-number" aria-hidden="true">1</span>
             <div class="step-content">
@@ -436,7 +501,7 @@
               <p class="step-body">You receive the result, a short handover video, and one small revision.</p>
             </div>
           </li>
-        </ol>
+        </ul>
         <div class="text-center mt-10">
           <a href="https://calendly.com/marcelo-regra-silva/30min"
              class="btn btn-primary btn-lg"
@@ -444,8 +509,8 @@
              rel="noopener noreferrer">
             Book a free 15-minute automation check
           </a>
-          <!-- TODO: Replace with your Tally form: https://tally.so/r/YOUR-FORM-ID -->
-          <a href="https://calendly.com/marcelo-regra-silva/30min"
+          <!-- TALLY-FORM: replace href with https://tally.so/r/YOUR-FORM-ID -->
+          <a href="https://tally.so/r/YOUR-FORM-ID"
              class="btn btn-secondary btn-lg"
              target="_blank"
              rel="noopener noreferrer">
@@ -517,6 +582,34 @@
     </section>
 
     <!-- ============================================================
+         NOT SURE? section
+         ============================================================ -->
+    <section class="section notfit-section bg-alt" aria-labelledby="notfit-headline">
+      <div class="container container--narrow text-center">
+        <h2 id="notfit-headline">Not sure if your workflow fits?</h2>
+        <p class="notfit-body">
+          Send a short description. I'll tell you honestly whether it can be automated,
+          what the smallest useful version would be, and whether it fits a weekend sprint.
+        </p>
+        <div class="cta-group">
+          <!-- TALLY-FORM: replace href with https://tally.so/r/YOUR-FORM-ID -->
+          <a href="https://tally.so/r/YOUR-FORM-ID"
+             class="btn btn-primary btn-lg"
+             target="_blank"
+             rel="noopener noreferrer">
+            Send me your workflow problem
+          </a>
+          <a href="https://calendly.com/marcelo-regra-silva/30min"
+             class="btn btn-secondary btn-lg"
+             target="_blank"
+             rel="noopener noreferrer">
+            Book a free 15-minute check
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
          10. FINAL CTA
          ============================================================ -->
     <section class="section finalcta-section" aria-labelledby="finalcta-headline">
@@ -532,8 +625,8 @@
              rel="noopener noreferrer">
             Book a free 15-minute automation check
           </a>
-          <!-- TODO: Replace with your Tally form: https://tally.so/r/YOUR-FORM-ID -->
-          <a href="https://calendly.com/marcelo-regra-silva/30min"
+          <!-- TALLY-FORM: replace href with https://tally.so/r/YOUR-FORM-ID -->
+          <a href="https://tally.so/r/YOUR-FORM-ID"
              class="btn btn-secondary finalcta-btn-secondary btn-lg"
              target="_blank"
              rel="noopener noreferrer">
