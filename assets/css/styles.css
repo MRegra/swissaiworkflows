@@ -1615,17 +1615,17 @@ a.inline-link:hover {
 }
 
 .sample-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  max-width: 540px;
-  margin-inline: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 520px;
 }
 
 .sample-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--sp-4);
+  display: grid;
+  grid-template-columns: 1.25rem 1fr;
+  align-items: center;
+  gap: var(--sp-3);
   padding: var(--sp-4) 0;
   font-size: var(--text-base);
   font-weight: var(--weight-medium);
@@ -1641,9 +1641,10 @@ a.inline-link:hover {
 .sample-list li::before {
   content: "✓";
   color: var(--color-accent);
-  flex-shrink: 0;
-  font-size: var(--text-sm);
-  padding-top: 0.1rem;
+  font-size: var(--text-base);
+  font-weight: var(--weight-semibold);
+  text-align: center;
+  line-height: 1;
 }
 
 .sample-note {
