@@ -1623,7 +1623,7 @@ a.inline-link:hover {
 
 .sample-list li {
   display: grid;
-  grid-template-columns: 1.25rem 1fr;
+  grid-template-columns: 22px 1fr;
   align-items: center;
   gap: var(--sp-3);
   padding: var(--sp-4) 0;
@@ -1639,12 +1639,12 @@ a.inline-link:hover {
 }
 
 .sample-list li::before {
-  content: "✓";
-  color: var(--color-accent);
-  font-size: var(--text-base);
-  font-weight: var(--weight-semibold);
-  text-align: center;
-  line-height: 1;
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Ccircle cx='11' cy='11' r='11' fill='%23dbeafe'/%3E%3Cpath d='M7 11.5l3 3 5-6' stroke='%230071e3' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;
 }
 
 .sample-note {
