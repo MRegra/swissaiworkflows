@@ -804,7 +804,7 @@ p + p {
 
 .steps-list li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--sp-6);
   padding: var(--sp-6) 0;
   border-bottom: 1px solid var(--color-border-subtle);
@@ -827,6 +827,7 @@ p + p {
   font-size: var(--text-sm);
   letter-spacing: -0.01em;
   flex-shrink: 0;
+  padding-top: 0.15rem; /* optical alignment with step-title */
 }
 
 .step-text {
@@ -1227,6 +1228,143 @@ p + p {
   background: var(--color-accent);
   margin: 0 auto var(--sp-5);
   border-radius: 2px;
+}
+
+
+/* ============================================================
+   23. New sections — Who this is for, Trust, Steps, Offer, Casestudy
+   ============================================================ */
+
+/* --- Who this is for --- */
+.whofor-intro {
+  color: var(--color-text-muted);
+  max-width: var(--max-w-narrow);
+  margin-inline: auto;
+  margin-top: var(--sp-5);
+  margin-bottom: var(--sp-10);
+  line-height: var(--leading-relaxed);
+}
+
+.whofor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  justify-content: center;
+  margin-top: var(--sp-8);
+}
+
+.whofor-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: var(--sp-2) var(--sp-5);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--color-text);
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+}
+
+/* --- Trust / About --- */
+.trust-section h2 {
+  margin-bottom: var(--sp-6);
+}
+
+.trust-section p {
+  max-width: var(--max-w-narrow);
+  margin-bottom: var(--sp-4);
+  line-height: var(--leading-relaxed);
+}
+
+.trust-note {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-top: var(--sp-8);
+  padding-top: var(--sp-6);
+  border-top: 1px solid var(--color-border-subtle);
+  letter-spacing: 0.01em;
+}
+
+/* --- Pricing note (offer section) --- */
+.pricing-note {
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  max-width: var(--max-w-narrow);
+  margin-inline: auto;
+  margin-bottom: var(--sp-10);
+  line-height: var(--leading-relaxed);
+}
+
+/* --- Risk reversal callout (inside offer card) --- */
+.risk-note {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  background: var(--color-bg-alt);
+  border-left: 3px solid var(--color-accent);
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-block: var(--sp-5);
+  line-height: var(--leading-relaxed);
+}
+
+/* --- How it works — intro text --- */
+.howitworks-intro {
+  color: var(--color-text-muted);
+  max-width: var(--max-w-narrow);
+  margin-inline: auto;
+  margin-bottom: var(--sp-4);
+  line-height: var(--leading-relaxed);
+}
+
+/* --- How it works — rich step format --- */
+.steps-list li {
+  align-items: flex-start;
+}
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.step-title {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-medium);
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+
+.step-body {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+  margin: 0;
+}
+
+/* --- Case study CTA --- */
+.casestudy-cta {
+  margin-top: var(--sp-12);
+  padding-top: var(--sp-10);
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.casestudy-cta-label {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  margin-bottom: var(--sp-4);
+}
+
+/* --- Final CTA secondary button (on dark background) --- */
+.finalcta-section .finalcta-btn-secondary {
+  border-color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.85);
+  background: transparent;
+}
+
+.finalcta-section .finalcta-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.6);
+  color: #fff;
 }
 
 /* Hero — stronger headline gradient on supported browsers */
