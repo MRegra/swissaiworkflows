@@ -2097,7 +2097,7 @@ a.inline-link:hover {
 }
 
 .hero-trust-extended {
-  margin-top: var(--sp-7);
+  margin-top: var(--sp-10);
   max-width: 64ch;
   line-height: var(--leading-relaxed);
 }
